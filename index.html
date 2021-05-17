@@ -15,22 +15,29 @@
 </head>
 
 <body>
-    <main class="container card">
-        <div data-value="1"></div>
-        <div data-value="2"></div>
-        <div data-value="3"></div>
 
-        <div data-value="4"></div>
-        <div data-value="5"></div>
-        <div data-value="6"></div>
+    <div class="container">
+        <div class="container-player">
+            <div id="currentPlayer" class="current-player card"></div>
+        </div>
 
-        <div data-value="7"></div>
-        <div data-value="8"></div>
-        <div data-value="9"></div>
-    </main>
+        <main class="board card">
+            <div data-value="0" data-row="0" data-col="0"></div>
+            <div data-value="1" data-row="0" data-col="1"></div>
+            <div data-value="2" data-row="0" data-col="2"></div>
 
-    <div class="container-btn">
-        <button id="btnRestart" type="button" class="btn-restart card">RESTART</button>
+            <div data-value="3" data-row="1" data-col="0"></div>
+            <div data-value="4" data-row="1" data-col="1"></div>
+            <div data-value="5" data-row="1" data-col="2"></div>
+
+            <div data-value="6" data-row="2" data-col="0"></div>
+            <div data-value="7" data-row="2" data-col="1"></div>
+            <div data-value="8" data-row="2" data-col="2"></div>
+        </main>
+
+        <div class="container-btn">
+            <button id="btnRestart" type="button" class="btn-restart card">RESTART</button>
+        </div>
     </div>
 
     <script src="script.js"></script>
