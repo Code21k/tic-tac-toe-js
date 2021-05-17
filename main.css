@@ -1,0 +1,71 @@
+body {
+    height: 100%;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container{
+    margin: 100px auto 15px auto;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: stretch;
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    border-radius: 3px;
+}
+
+.container-btn{    
+    margin: 0 auto;
+    width: 50%;
+}
+
+.btn-restart{
+    width: 100%;
+    padding: 10px;
+    background: rgb(206 169 32 / 70%);
+    border: 0px;
+    border-radius: 3px;
+    font-size: 2em;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-restart:hover{
+    background: rgb(206 169 32  / 50%);
+}
+
+.btn-restart:active{
+    outline: 1px solid;
+    box-shadow: -1px -1px 1px #000;
+}
+
+.box{
+    flex-basis: 30%;
+    flex-grow: 1;
+    height: 150px;
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+.box:hover{
+    background: #eee;
+}
+
+.text-value{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 6em;
+}
+
+@media (max-width: 480px) {
+    .container, .container-btn{
+        width: 95%;
+    }
+}
