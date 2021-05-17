@@ -80,8 +80,6 @@
             left: {},
             right: {}
         };
-        console.log("currentPlayer :", currentPlayer.board);
-        console.log("Total Row :", totalRow);
 
         for(const col of mapBoard[0]){
 
@@ -122,7 +120,7 @@
         if(totalRow == Object.keys(mapBoard).length){
             var leftWin = true;
             var rightWin = true;
-            console.log(playerBoard);
+            
             for(let i=0; i < totalRow; i++){
                 var leftValue = i.toString();
                 var rightValue = (totalRow - (i+1)).toString();
